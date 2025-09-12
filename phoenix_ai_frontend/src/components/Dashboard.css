@@ -1,0 +1,83 @@
+body {
+  font-family: 'Roboto', 'Lato', 'Open Sans', Arial, sans-serif;
+  background: #181f2a;
+  color: #e3eaf2;
+}
+.dashboard-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 1.5rem;
+  margin: 2rem 0;
+}
+.dashboard-card {
+  background: #232b3e;
+  border-radius: 12px;
+  box-shadow: 0 2px 12px #0002;
+  padding: 1.5rem;
+  min-width: 280px;
+}
+.dashboard-alerts {
+  grid-column: span 2;
+  border-left: 6px solid #ff9800;
+}
+.dashboard-kpi {
+  border-left: 6px solid #1976d2;
+}
+.dashboard-chart {
+  border-left: 6px solid #43a047;
+}
+.dashboard-mitigation {
+  border-left: 6px solid #ffd600;
+}
+.dashboard-volunteer {
+  border-left: 6px solid #ab47bc;
+}
+.kpi-row {
+  display: flex;
+  gap: 2rem;
+  margin-top: 1rem;
+}
+.kpi-item {
+  font-size: 1.2rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+.kpi-icon {
+  font-size: 1.5rem;
+}
+.status-ok {
+  color: #43a047;
+  font-weight: bold;
+}
+.status-bad {
+  color: #e53935;
+  font-weight: bold;
+}
+.chart-labels {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.9rem;
+  margin-top: 0.5rem;
+}
+.volunteer-msg {
+  margin-top: 0.5rem;
+  color: #43a047;
+}
+input, button {
+  font-family: inherit;
+  font-size: 1rem;
+  margin: 0.3rem 0.5rem 0.3rem 0;
+  padding: 0.3rem 0.7rem;
+  border-radius: 6px;
+  border: none;
+}
+button {
+  background: #1976d2;
+  color: #fff;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+button:hover {
+  background: #1565c0;
+}
